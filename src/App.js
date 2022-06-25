@@ -8,8 +8,8 @@ import contacts from './data/contacts.json';
 
 const App = () => {
   // Masukkan Header dan Contact ke dalam div App
-  const arrContact = contacts.map((e)=>{
-    return <Contact data={e}/>;
+  const arrContact = contacts.map((e,i)=>{
+    return <Contact data={e} key={i}/>;
   });
   
   return (
